@@ -1,0 +1,19 @@
+
+
+
+{
+  "name": "expense-tracker-ardra",
+  "version": "1.0.0",
+  "description": "Expense Tracker built with vanilla HTML, CSS and JavaScript (ES modules)",
+  "scripts": {
+    "start": "serve .",
+    "format": "prettier --write ."
+  },
+  "keywords": ["expense-tracker", "javascript", "localstorage"],
+  "author": "Ardra",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.9.9",
+    "serve": "^14.2.6"
+  }
+}
