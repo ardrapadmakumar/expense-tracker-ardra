@@ -299,6 +299,15 @@
   gap: var(--space-3);
 }
 
+.chart-pie {
+  align-self: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-2);
+}
+
 .chart-row {
   display: grid;
   grid-template-columns: 110px 1fr auto;
