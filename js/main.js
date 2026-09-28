@@ -5,6 +5,7 @@ import { createListUI } from './ui/list.ui.js';
 import { createSummaryUI } from './ui/summary.ui.js';
 import { createFiltersUI } from './ui/filters.ui.js';
 import { createChartUI } from './ui/chart.ui.js';
+import { createExportUI } from './ui/export.ui.js';
 
 const service = new TransactionService(new StorageService());
 
@@ -16,6 +17,7 @@ const listUI = createListUI({ onEdit: handleEdit, onDelete: handleDelete });
 const summaryUI = createSummaryUI({ onMonthChange: render });
 const filtersUI = createFiltersUI({ onChange: render });
 const chartUI = createChartUI();
+createExportUI({ getTransactions: () => service.getAll() });
 
 function handleSubmit(data, id) {
   if (id) service.update(id, data);

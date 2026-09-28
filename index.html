@@ -109,7 +109,20 @@
 
         <!-- Transactions -->
         <section class="card transactions-section" aria-labelledby="transactions-title">
-          <h2 id="transactions-title" class="section-title">Transactions</h2>
+          <div class="section-header">
+            <h2 id="transactions-title" class="section-title">Transactions</h2>
+            <details class="dropdown" id="export-menu">
+              <summary class="btn btn--secondary btn--small">Export as</summary>
+              <div class="dropdown-menu">
+                <button type="button" class="dropdown-item" data-format="csv">
+                  CSV (Excel)
+                </button>
+                <button type="button" class="dropdown-item" data-format="json">
+                  JSON
+                </button>
+              </div>
+            </details>
+          </div>
 
           <div class="filters" aria-label="Filter transactions">
             <div class="form-group">
